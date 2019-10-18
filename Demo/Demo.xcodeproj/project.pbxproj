@@ -13,6 +13,10 @@
 		9B03137C235600B600D90D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B03137A235600B600D90D30 /* Main.storyboard */; };
 		9B03137E235600B700D90D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B03137D235600B700D90D30 /* Assets.xcassets */; };
 		9B031381235600B700D90D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B03137F235600B700D90D30 /* LaunchScreen.storyboard */; };
+		9B47871C2358079F0071A884 /* AddressPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47871B2358079F0071A884 /* AddressPickerController.swift */; };
+		9B6F93AE235978AA00C770F6 /* SoundPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F93AD235978AA00C770F6 /* SoundPlayerViewController.swift */; };
+		9B6F93B023597A4100C770F6 /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F93AF23597A4100C770F6 /* sound.m4a */; };
+		9B90CF662358064F007BBA9C /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90CF652358064F007BBA9C /* StoryBoard.swift */; };
 		9BBB10C2235716BE002A0AC3 /* UserDefaultsSettableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB10C1235716BE002A0AC3 /* UserDefaultsSettableViewController.swift */; };
 		9BBB10C52357277D002A0AC3 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBB10C42357277D002A0AC3 /* Utils */; };
 /* End PBXBuildFile section */
@@ -26,6 +30,10 @@
 		9B03137D235600B700D90D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B031380235600B700D90D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B031382235600B700D90D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B47871B2358079F0071A884 /* AddressPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPickerController.swift; sourceTree = "<group>"; };
+		9B6F93AD235978AA00C770F6 /* SoundPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerViewController.swift; sourceTree = "<group>"; };
+		9B6F93AF23597A4100C770F6 /* sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.m4a; sourceTree = "<group>"; };
+		9B90CF652358064F007BBA9C /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		9BBB10C1235716BE002A0AC3 /* UserDefaultsSettableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSettableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +69,8 @@
 		9B031373235600B600D90D30 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				9B6F93AC235975EF00C770F6 /* SoundPlayer */,
+				9B90CF642358054E007BBA9C /* Storyboard */,
 				9B90CF6323574CDB007BBA9C /* Address */,
 				9BBB10C02357169A002A0AC3 /* Wrapper */,
 				9BBB10BF23571690002A0AC3 /* WeakObject */,
@@ -73,16 +83,34 @@
 				9B03137A235600B600D90D30 /* Main.storyboard */,
 				9B03137D235600B700D90D30 /* Assets.xcassets */,
 				9B03137F235600B700D90D30 /* LaunchScreen.storyboard */,
+				9B6F93AF23597A4100C770F6 /* sound.m4a */,
 				9B031382235600B700D90D30 /* Info.plist */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		9B6F93AC235975EF00C770F6 /* SoundPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F93AD235978AA00C770F6 /* SoundPlayerViewController.swift */,
+			);
+			path = SoundPlayer;
+			sourceTree = "<group>";
+		};
 		9B90CF6323574CDB007BBA9C /* Address */ = {
 			isa = PBXGroup;
 			children = (
+				9B47871B2358079F0071A884 /* AddressPickerController.swift */,
 			);
 			path = Address;
+			sourceTree = "<group>";
+		};
+		9B90CF642358054E007BBA9C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9B90CF652358064F007BBA9C /* StoryBoard.swift */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		9BBB10BC235715F9002A0AC3 /* Delegate */ = {
@@ -190,6 +218,7 @@
 			files = (
 				9B031381235600B700D90D30 /* LaunchScreen.storyboard in Resources */,
 				9B03137E235600B700D90D30 /* Assets.xcassets in Resources */,
+				9B6F93B023597A4100C770F6 /* sound.m4a in Resources */,
 				9B03137C235600B600D90D30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B47871C2358079F0071A884 /* AddressPickerController.swift in Sources */,
+				9B90CF662358064F007BBA9C /* StoryBoard.swift in Sources */,
 				9B031379235600B600D90D30 /* ViewController.swift in Sources */,
+				9B6F93AE235978AA00C770F6 /* SoundPlayerViewController.swift in Sources */,
 				9BBB10C2235716BE002A0AC3 /* UserDefaultsSettableViewController.swift in Sources */,
 				9B031375235600B600D90D30 /* AppDelegate.swift in Sources */,
 				9B031377235600B600D90D30 /* SceneDelegate.swift in Sources */,
