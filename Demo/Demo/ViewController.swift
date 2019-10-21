@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         case 2: // 声音播放
             let controller = SoundPlayerViewController.instance()
             present(controller, animated: true) { }
-            
+
         default: break
         }
     }
