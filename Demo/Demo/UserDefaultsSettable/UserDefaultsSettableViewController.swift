@@ -31,7 +31,7 @@ extension UserDefaults {
     
     // 应用信息
     enum AppInfo: UserDefaultsSettable {
-        enum defaultKeys: String {
+        enum Keys: String, UserDefaultsSettableKeys {
             case launchCount
             case firstLaunchTime
             case currentVersion
@@ -40,34 +40,35 @@ extension UserDefaults {
     
     // 配置信息
     enum ConfigInfo: UserDefaultsSettable {
-        enum defaultKeys: String {
+        enum Keys: String, UserDefaultsSettableKeys {
             case config
             case update
             case splash
-        }
-        
-        // 随版本存储
-        static var build: String? {
-            return "version"
+            
+            // 随版本存储
+            var build: String? {
+                return "version"
+            }
         }
     }
     
     // 用户信息
     enum AccountInfo: UserDefaultsSettable {
-        enum defaultKeys: String {
+        enum Keys: String, UserDefaultsSettableKeys {
             case info
         }
     }
     
     // 设置信息
     enum SettingInfo: UserDefaultsSettable {
-        enum defaultKeys: String {
+        enum Keys: String, UserDefaultsSettableKeys {
             case push
             case xxxx
-        }
-        // 随用户存储
-        static var token: String? {
-            return "userId"
+            
+            // 随用户存储
+            var token: String? {
+                return "userId"
+            }
         }
     }
 }
