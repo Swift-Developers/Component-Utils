@@ -21,6 +21,10 @@ class SoundPlayerViewController: UIViewController {
             }
             
             print(SoundPlayer.isPlaying)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                print(SoundPlayer.isPlaying)
+            }
         }
     }
     
