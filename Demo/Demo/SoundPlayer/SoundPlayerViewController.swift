@@ -19,6 +19,8 @@ class SoundPlayerViewController: UIViewController {
             } catch {
                 print(error)
             }
+            
+            print(SoundPlayer.isPlaying)
         }
     }
     
