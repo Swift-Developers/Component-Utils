@@ -19,6 +19,8 @@
 		9B90CF662358064F007BBA9C /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90CF652358064F007BBA9C /* StoryBoard.swift */; };
 		9BBB10C2235716BE002A0AC3 /* UserDefaultsSettableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB10C1235716BE002A0AC3 /* UserDefaultsSettableViewController.swift */; };
 		9BBB10C52357277D002A0AC3 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBB10C42357277D002A0AC3 /* Utils */; };
+		B3C3FDDD286072C1009777EB /* InsetLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3FDDC286072C1009777EB /* InsetLabelViewController.swift */; };
+		B3C3FDDF286074AB009777EB /* PanAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3FDDE286074AB009777EB /* PanAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		9B6F93AF23597A4100C770F6 /* sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.m4a; sourceTree = "<group>"; };
 		9B90CF652358064F007BBA9C /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		9BBB10C1235716BE002A0AC3 /* UserDefaultsSettableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSettableViewController.swift; sourceTree = "<group>"; };
+		B3C3FDDC286072C1009777EB /* InsetLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetLabelViewController.swift; sourceTree = "<group>"; };
+		B3C3FDDE286074AB009777EB /* PanAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				9B03137F235600B700D90D30 /* LaunchScreen.storyboard */,
 				9B6F93AF23597A4100C770F6 /* sound.m4a */,
 				9B031382235600B700D90D30 /* Info.plist */,
+				B3C3FDDC286072C1009777EB /* InsetLabelViewController.swift */,
+				B3C3FDDE286074AB009777EB /* PanAnimationViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -233,9 +239,11 @@
 				9B47871C2358079F0071A884 /* AddressPickerController.swift in Sources */,
 				9B90CF662358064F007BBA9C /* StoryBoard.swift in Sources */,
 				9B031379235600B600D90D30 /* ViewController.swift in Sources */,
+				B3C3FDDD286072C1009777EB /* InsetLabelViewController.swift in Sources */,
 				9B6F93AE235978AA00C770F6 /* SoundPlayerViewController.swift in Sources */,
 				9BBB10C2235716BE002A0AC3 /* UserDefaultsSettableViewController.swift in Sources */,
 				9B031375235600B600D90D30 /* AppDelegate.swift in Sources */,
+				B3C3FDDF286074AB009777EB /* PanAnimationViewController.swift in Sources */,
 				9B031377235600B600D90D30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

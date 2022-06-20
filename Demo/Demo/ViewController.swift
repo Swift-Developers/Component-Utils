@@ -43,6 +43,14 @@ class ViewController: UIViewController {
             let controller = SoundPlayerViewController.instance()
             present(controller, animated: true) { }
 
+        case 3:
+            let controller = InsetLabelViewController.instance()
+            present(controller, animated: true) { }
+            
+        case 4:
+            let controller = PanAnimationViewController.instance()
+            navigationController?.pushViewController(controller, animated: true)
+            
         default: break
         }
     }
